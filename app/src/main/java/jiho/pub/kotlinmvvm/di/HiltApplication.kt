@@ -1,4 +1,4 @@
-package jiho.pub.kotlinmvvm.binding
+package jiho.pub.kotlinmvvm.di
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

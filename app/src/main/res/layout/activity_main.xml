@@ -5,14 +5,25 @@
 
     <data>
 
+        <variable
+            name="activity"
+            type="jiho.pub.kotlinmvvm.ui.activity.MainActivity" />
+
+        <variable
+            name="viewModel"
+            type="jiho.pub.kotlinmvvm.domain.viewModel.MainViewModel" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.activity.MainActivity">
 
+        <androidx.recyclerview.widget.RecyclerView
+            setAdapter="@{activity.matchAdapter}"
+            setItemList="@{viewModel.matchList}"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </layout>
